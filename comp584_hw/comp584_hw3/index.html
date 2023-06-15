@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* GMAIL BLUE LINKS */
+      u + #body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* SAMSUNG MAIL BLUE LINKS */
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* Universal styles for links and stuff */
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #cccccc;
+        padding-bottom: 60px;
+      }
+      .main {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+      }
+      .centeredText {
+        text-align: center;
+      }
+      .blackBackround {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .heroSection a,
+      .bodySection1 a,
+      .footer a {
+        text-decoration: none;
+        color: #2997ff;
+      }
+      .heroSection a:hover,
+      .bodySection1 a:hover,
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .bodySection1 p,
+      .bodySection1 h4 {
+        color: #333333;
+        margin: 20px 80px 20px;
+      }
+
+      .bodySection1 p,
+      .bodySection3 p {
+        font-size: 12px;
+      }
+
+      .footer p {
+        color: #333333;
+        font-size: 12px;
+        margin: 20px 100px 20px;
+        font-weight: 500;
+      }
+
+      .slide {
+        display: none;
+      }
+
+      #slide1:checked ~ .slide1,
+      #slide2:checked ~ .slide2,
+      #slide3:checked ~ .slide3,
+      #slide4:checked ~ .slide4 {
+        display: block !important;
+      }
+
+      .bodySection2 input {
+        transition: all 0.2s ease;
+      }
+      .bodySection2 input:hover {
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .mobile {
+          width: 100% !important;
+        }
+        .block {
+          display: block !important;
+          width: 48% !important;
+        }
+        .textBlock {
+          display: block !important;
+          margin: 40px !important;
+        }
+        .fullBlock {
+          /* display: block !important; */
+          width: 100% !important;
+        }
+      }
+
+      /* animation keyframes */
+
+      @keyframes textTransition {
+        from {
+          opacity: 0%;
+        }
+        to {
+          opacity: 100%;
+        }
+      }
+
+      /* animation classes */
+      .fade1 {
+        animation: 3s 1 textTransition;
+      }
+      .fade2 {
+        animation: 5s 1 textTransition;
+      }
+    </style>
+  </head>
+  <body id="body" style="margin: 0 !important; padding: 0 !important">
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <!-- Logo image -->
+        <!-- Headline -->
+        <!-- Hero Image -->
+
+        <tr class="heroSection">
+          <td>
+            <table class="centeredText" width=" 100%">
+              <tr class="blackBackround">
+                <td>
+                  <img
+                    style="padding: 50px 0px 0px"
+                    width="30px"
+                    src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/logo.png?v=1665430873150"
+                    alt="apple-logo"
+                  />
+                </td>
+              </tr>
+
+              <tr class="blackBackround">
+                <td>
+                  <h1 class="fade1" style="margin: 10px">iPhone 14 Pro</h1>
+                  <h2 class="fade2" style="margin: 10px">Pro. Beyond.</h2>
+                  <a
+                    href="https://www.apple.com/iphone-14-pro/"
+                    target="_blank"
+                    style="margin: 10px;"
+                  > <h4 style="display: inline;">Learn More ></h4>
+                   <a
+                    href="https://www.apple.com/iphone-14-pro/"
+                    target="_blank"
+                    style="margin: 10px;"
+                  ><h4 style="display: inline;">Buy ></h4>
+                </td>
+              </tr>
+
+
+              <tr class="blackBackround">
+                <td>
+                  <img
+                    width="450px"
+                    src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone.png?v=1665430873518"
+                    alt="hero-image"
+                    style="margin-top: 20px"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Body Section 1 -->
+
+        <tr class="bodySection1">
+          <td>
+            <table class="centeredText" width="100%">
+              <tr>
+                <td>
+                  <h1>What's in the Box</h1>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    width="100%"
+                    class="block"
+                  >
+                    <tr>
+                      <td style="padding: 20px; line-height: 24px">
+                        <img
+                          width="260px"
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphonebox.png?v=1665430873364"
+                          alt="iphone-box"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- right collumn -->
+                  <table
+                    align="right"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    width="100%"
+                    class="block"
+                  >
+                    <tr>
+                      <td style="line-height: 24px; padding: 20px">
+                        <p
+                          class="textBlock"
+                          style="display: inline; margin: 0px 20px 0px"
+                        >
+                          iPhone 14 Pro
+                        </p>
+                        <p
+                          class="textBlock"
+                          style="display: inline; margin: 0px 20px 0px"
+                        >
+                          USB-C to Lightning Cable
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Our environmental goals.</h4>
+                  <p>
+                    As part of our efforts to reach
+                    <a href="https://www.apple.com/environment/" target="_blank"
+                      >carbon neutrality by 2030</a
+                    >
+                    , iPhone 14 Pro and iPhone 14 Pro Max do not include a power
+                    adapter or EarPods. Included in the box is a USB‑C to
+                    Lightning Cable that supports fast charging and is
+                    compatible with USB‑C power adapters and computer ports.
+                  </p>
+                  <p>
+                    We encourage you to re‑use your current USB‑A to Lightning
+                    cables, power adapters, and headphones, which are compatible
+                    with these iPhone models. But if you need any new Apple
+                    power adapters or headphones, they are available for
+                    purchase.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Body Section2 -->
+
+        <tr class="bodySection2">
+          <td>
+            <table class="centeredText" width="100%">
+              <tr>
+                <td>
+                  <h4 style="display: inline">Finish.</h4>
+                  <h4 style="display: inline; color: #5c5b57">
+                    Pick your favorite.
+                  </h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input
+                    type="radio"
+                    name="slides"
+                    id="slide1"
+                    style="accent-color: #5c5b57"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="slides"
+                    id="slide2"
+                    style="accent-color: #f9e5c9"
+                  />
+                  <input
+                    type="radio"
+                    name="slides"
+                    id="slide3"
+                    style="accent-color: #f5f5f0"
+                  />
+                  <input
+                    type="radio"
+                    name="slides"
+                    id="slide4"
+                    style="accent-color: #570861"
+                  />
+
+                  <div class="slide slide1" style="padding: 20px">
+                    <img
+                      src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-14-pro-storage-select-202209-6-1inch-spaceblack.jfif?v=1665448449095"
+                      alt="graphite-iphone"
+                      width="100%"
+                    />
+                    <h5 style="margin-top: -55px">Color - Space Black</h5>
+                  </div>
+                  <div class="slide slide2" style="padding: 20px">
+                    <img
+                      src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-14-pro-finish-select-202209-6-1inch-gold.jfif?v=1665448449397"
+                      alt="gold-iphone"
+                      width="100%"
+                    />
+                    <h5 style="margin-top: -55px">Color - Gold</h5>
+                  </div>
+                  <div class="slide slide3" style="padding: 20px">
+                    <img
+                      src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-14-pro-finish-select-202209-6-1inch-silver.jfif?v=1665448449485"
+                      alt="silver-iphone"
+                      width="100%"
+                    />
+                    <h5 style="margin-top: -55px">Color - Silver</h5>
+                  </div>
+                  <div class="slide slide4" style="padding: 20px">
+                    <img
+                      src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-14-pro-finish-select-202209-6-1inch-deeppurple.jfif?v=1665448448997"
+                      alt="deep-purple-iphone"
+                      width="100%"
+                    />
+                    <h5 style="margin-top: -55px">Color - Deep Purple</h5>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- body section 3 -->
+
+        <tr class="bodySection3">
+          <td>
+            <table class="centeredText" width="100%">
+              <tr>
+                <td>
+                  <h4>Which iPhone is Right for you?</h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    width="33%"
+                    class="fullBlock"
+                  >
+                    <tr>
+                      <td style="line-height: 24px; padding: 20px">
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-iphone-14-pro-202209.jfif?v=1665430873452"
+                          alt="iphone-14-pro"
+                          width="130px"
+                          style="max-width: 130px"
+                        />
+                        <h4>iPhone 14 Pro</h4>
+                        <p role="presentation">The ultimate iPhone.</p>
+                        <p role="presentation">From $999</p>
+                        <hr />
+                        <p role="presentation">
+                          <b>6.7″ or 6.1″</b> <br />
+                          Super Retina XDR display¹<br />
+                          ProMotion technology <br />
+                          Always-On display
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-dynamic-202209.jfif?v=1665430873150"
+                          alt="island-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Dynamic Island <br />
+                          A new way to interact with iPhone
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-sos-202209.jfif?v=1665430873785"
+                          alt="sos-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Emergency SOS via satellite³ <br />
+                          Emergency SOS <br> 
+                          Crash Detection <br />
+                          <br />
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-pro-camera-202209.jfif?v=1665430873211"
+                          alt="camera-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Pro camera system <br />
+                          <br />
+                          48MP Main | Ultra Wide | <br />
+                          Telephoto <br />
+                          Photonic Engine for incredible detail and color <br />
+                          Autofocus on TrueDepth front camera
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-battery-202209.jfif?v=1665430873150"
+                          alt="battery-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Up to 29 hours video playback⁴
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-a16-chip-202209.jfif?v=1665430873347"
+                          alt="chip-logo"
+                          width="70"
+                        />
+                        <p
+                          role="presentation"
+                          style="margin-top: -8px; margin-bottom: 35px"
+                        >
+                          A16 Bionic chip
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-face-id-202209.jfif?v=1665430874078"
+                          alt="id-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Face ID
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-5g-202209.jfif?v=1665430873731"
+                          alt="5g-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Superfast 5G cellular⁵
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    width="33%"
+                    class="fullBlock"
+                  >
+                    <tr>
+                      <td style="line-height: 24px; padding: 20px">
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-iphone-14-202209.jfif?v=1665430873904"
+                          alt="iphone-14"
+                          width="130px"
+                          style="max-width: 130px"
+                        />
+                        <h4 role="presentation">iPhone 14</h4>
+                        <p role="presentation">A total powerhouse.</p>
+                        <p role="presentation">From $799</p>
+                        <hr />
+                        <p role="presentation">
+                          <b>6.7″ or 6.1″</b> <br />
+                          Super Retina XDR display¹ <br><br><br>
+                        </p>
+                        <p style="margin-top: 80px"></p>
+                        <p>—</p>
+                        <p style="margin-top: 60px"></p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-sos-202209.jfif?v=1665430873785"
+                          alt="sos-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Emergency SOS via satellite³ <br>
+                          Emergency SOS <br>
+                          Crash Detection <br />
+                          <br />
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-14-dual-camera-202209.jfif?v=1665430873610"
+                          alt="camera-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Advanced dual-camera system <br />
+                          12MP Main | Ultra Wide <br />
+                          — <br />
+                          Photonic Engine for incredible detail and color <br />
+                          Autofocus on TrueDepth front camera
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-battery-202209.jfif?v=1665430873150"
+                          alt="battery-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Up to 26 hours video playback⁴
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-a15-chip-202209.jfif?v=1665430873973"
+                          alt="chip-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          A15 Bionic chip with 5-core GPU
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-face-id-202209.jfif?v=1665430874078"
+                          alt="id-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Face ID
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-5g-202209.jfif?v=1665430873731"
+                          alt="5g-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Superfast 5G cellular⁵
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    width="33%"
+                    class="fullBlock"
+                  >
+                    <tr>
+                      <td style="line-height: 24px; padding: 20px">
+                        <img
+                        src=https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-iphone-13-202209.jfif?v=1665436820457"
+                        alt="iphone-14" width="130px" style="max-width: 130px"
+                        />
+                        <h4 role="presentation">iPhone 13</h4>
+                        <p role="presentation">As amazing as ever</p>
+                        <p role="presentation">From $599</p>
+                        <hr />
+                        <p role="presentation">
+                          <b>6.1″ or 5.4″</b> <br />
+                          Super Retina XDR display¹
+                        </p>
+                        <p style="margin-top: 130px">—</p>
+                        <p style="margin-top: 56px"></p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-sos-202209.jfif?v=1665430873785"
+                          alt="sos-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px; margin-bottom: 35px;">
+                          —<br />
+                          Emergency SOS
+                          <br />
+                          —
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-iphone-14-dual-camera-202209.jfif?v=1665430873610"
+                          alt="camera-logo"
+                          width="70"
+                        />
+                        <p
+                          role="presentation"
+                          style="margin-top: -4px; margin-bottom: 35px"
+                        >
+                          Advanced dual-camera system <br />
+                          2MP Main | Ultra Wide <br>—<br>—<br><br>
+                          TrueDepth front camera
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-battery-202209.jfif?v=1665430873150"
+                          alt="battery-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Up to 26 hours video playback⁴
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-a15-chip-202209.jfif?v=1665430873973"
+                          alt="chip-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          A15 Bionic chip with 5-core GPU
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-face-id-202209.jfif?v=1665430874078"
+                          alt="id-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Face ID
+                        </p>
+                        <img
+                          src="https://cdn.glitch.global/90c8fcd7-ea69-435c-8bac-a1a0076be84e/iphone-compare-icon-5g-202209.jfif?v=1665430873731"
+                          alt="5g-logo"
+                          width="70"
+                        />
+                        <p role="presentation" style="margin-top: -8px">
+                          Superfast 5G cellular⁵
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Footer information: Always include an unsubscribe link! -->
+        <tr>
+          <td class="footer" style="background-color: #d6d6d6">
+            <p role="presentation">
+              This is a Footer. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p role="presentation">
+              One Apple Park Way, MS 303-4CA, Cupertino, CA 95014
+            </p>
+            <p role="presentation">
+              Unsubscribe from these emails
+              <a style="color: black" href="">here</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+   */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Geneva, sans-serif;
+}
+a {
+  color: #2772b0;
+}
+.wrapper {
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.wrapper > * {
+  padding: 1em;
+  border-radius: 1em;
+}
+
+div img {
+  width: 100%;
+  max-width: 225px;
+}
+
+/* grid system -- mobile first! */
+.row1-1 {
+  grid-row: 1 / 2;
+  background-color: #a3cdd9;
+}
+
+.row1-2 {
+  grid-row: 2 / 3;
+  background-color: #a3cdd9;
+}
+
+.row1-3 {
+  grid-row: 3 / 4;
+  background-color: #a3cdd9;
+}
+
+.row1-4 {
+  grid-row: 4 / 5;
+  background-color: #a3cdd9;
+}
+
+.row2-1 {
+  grid-row: 5 / 6;
+  background-color: #fffce6;
+}
+
+.row2-2 {
+  grid-row: 6 / 7;
+  background-color: #fffce6;
+}
+
+.row3-1 {
+  grid-row: 7 / 8;
+  background-color: #a3cdd9;
+}
+
+.row3-2 {
+  grid-row: 8 / 9;
+  background-color: orange;
+}
+
+.row4-1 {
+  grid-row: 9 / 10;
+  background-color: grey;
+}
+
+.row5-1 {
+  grid-row: 10 / 11;
+  background-color: #a3cdd9;
+}
+
+.row5-2 {
+  grid-row: 11 / 12;
+  background-color: #fffce6;
+}
+.row5-3 {
+  grid-row: 12 / 13;
+  background-color: #a3cdd9;
+}
+
+.row6-1 {
+  grid-row: 13 / 14;
+  background-color: #fffce6;
+}
+
+.row6-2 {
+  grid-row: 14 / 15;
+  background-color: #a3cdd9;
+}
+
+.row6-3 {
+  grid-row: 15 / 16;
+  background-color: #a3cdd9;
+}
+
+/* Tablet Landscape Screen Sizes */
+@media only screen and (min-width: 480px) {
+  .row1-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row1-2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: #a3cdd9;
+  }
+
+  .row1-3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row1-4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #a3cdd9;
+  }
+
+  .row2-1 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: #fffce6;
+  }
+
+  .row2-2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-color: #fffce6;
+  }
+
+  .row3-1 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    background-color: #a3cdd9;
+  }
+
+  .row3-2 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+    background-color: orange;
+  }
+
+  .row4-1 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    background-color: grey;
+  }
+
+  .row5-1 {
+    grid-row: 8 / 9;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row5-2 {
+    grid-row: 7 / 8;
+    grid-column: 1 / 3;
+    background-color: #fffce6;
+  }
+  .row5-3 {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3;
+    background-color: #a3cdd9;
+  }
+
+  .row6-1 {
+    grid-row: 10 / 11;
+    grid-column: 1 / 3;
+    background-color: #fffce6;
+  }
+
+  .row6-2 {
+    grid-row: 9 / 10;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row6-3 {
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+    background-color: #a3cdd9;
+  }
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+  .row1-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row1-2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: #a3cdd9;
+  }
+
+  .row1-3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    background-color: #a3cdd9;
+  }
+
+  .row1-4 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    background-color: #a3cdd9;
+  }
+
+  .row2-1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: #fffce6;
+  }
+
+  .row2-2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    background-color: #fffce6;
+  }
+
+  .row3-1 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row3-2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    background-color: orange;
+  }
+
+  .row4-1 {
+    grid-row: 4 / 5;
+    grid-column: span 5;
+    background-color: grey;
+  }
+
+  .row5-1 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    background-color: #a3cdd9;
+  }
+
+  .row5-2 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+    background-color: #fffce6;
+  }
+  .row5-3 {
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    background-color: #a3cdd9;
+  }
+
+  .row6-1 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    background-color: #fffce6;
+  }
+
+  .row6-2 {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    background-color: #a3cdd9;
+  }
+
+  .row6-3 {
+    grid-row: 6 / 7;
+    grid-column: 4 / 5;
+    background-color: #a3cdd9;
+  }
+}
